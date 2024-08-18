@@ -1,0 +1,27 @@
+### Get all workouts
+GET http://localhost:4000/workouts
+
+### Get a single workout
+GET http://localhost:4000/workouts/64e9b36c21171510ed4c8767
+
+###Create a workout
+POST http://localhost:4000/workouts
+Content-Type: application/json
+
+{
+    "title": "situps",
+    "load": 0,
+    "reps": 10
+
+}
+
+###Update a workout
+PATCH http://localhost:4000/workouts/64e9ae6e4e2d886ca9b925b1
+Content-Type:application/json
+
+{
+    "load": 4
+}
+
+###Delete a workout
+DELETE http://localhost:4000/workouts/64e9b36c21171510ed4c8767
